@@ -6,9 +6,12 @@ plugins {
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'org.springframework.boot'
 
+bootJar {
+	baseName="service-discovery"
+	version = '0.0.1'
+}
 
-group = 'com.hippo'
-version = '0.0.1-SNAPSHOT'
+group = 'hippo'
 sourceCompatibility = '1.8'
 
 repositories {
